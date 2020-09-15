@@ -18,7 +18,7 @@
       "prefix": "vdst",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/bpm-mf-pre-filter",
             "index": "src/index.html",
@@ -33,7 +33,17 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/rxjs/bundles/rxjs.umd.js",
+              "node_modules/@angular/core/bundles/core.umd.js",
+              "node_modules/@angular/common/bundles/common.umd.js",
+              "node_modules/@angular/common/bundles/common-http.umd.js",
+              "node_modules/@angular/compiler/bundles/compiler.umd.js",
+              "node_modules/@angular/elements/bundles/elements.umd.js",
+              "node_modules/@angular/platform-browser/bundles/platform-browser.umd.js",
+              "node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"
+            ],
+            "extraWebpackConfig": "webpack.partial.js"
           },
           "configurations": {
             "production": {
@@ -44,13 +54,14 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
+              "outputHashing": "none",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "singleBundle": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -67,9 +78,10 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "bpm-mf-pre-filter:build"
+            "browserTarget": "bpm-mf-pre-filter:build",
+            "extraWebpackConfig": "webpack.partial.js"
           },
           "configurations": {
             "production": {
@@ -83,26 +95,10 @@
             "browserTarget": "bpm-mf-pre-filter:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          }
-        },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
+            "eslintConfig": ".eslintrc.js",
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
@@ -126,6 +122,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "bpm-mf-pre-filter"
 }
