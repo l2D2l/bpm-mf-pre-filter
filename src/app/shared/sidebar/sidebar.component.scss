@@ -1,0 +1,79 @@
+.aside {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0px;
+  z-index: 20;
+  background: #fff;
+  color: white;
+
+  &__list {
+    background: #999999;
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__title {
+    height: 12.7%;
+
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__profile {
+    height: 14.65%;
+
+    &__avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    &__name {
+      padding-left: 12px;
+    }
+
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__list-item {
+    height: 8.6%;
+
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__list-item--decoration {
+    text-decoration: underline;
+  }
+}

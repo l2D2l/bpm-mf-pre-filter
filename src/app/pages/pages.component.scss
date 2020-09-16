@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  .page-wrapper {
+    background: #f4f6f9;
+    margin-left: 240px;
+    padding-top: 70px;
+    height: 100%;
+    position: fixed;
+    width: calc(100% - 240px);
+    .container-fluid {
+      padding: 25px 25px;
+      height: 100%;
+    }
+  }
+}
