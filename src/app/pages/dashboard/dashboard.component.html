@@ -5,16 +5,29 @@
     </h1>
 
     <p>
+    <!-- <p class="bg-blue-500"> -->
         Ingresa los datos del cliente para realizar una consulta
     </p>
 
-    <div *ngFor="let boton of botones">
+    <!-- <div *ngFor="let boton of botones">
         <button>
             {{boton}}
         </button>
-    </div>
-
-    <!-- <div>
+    </div> -->
+    <!-- <ui-text> -->
+    <ui-text color="blue-900">
+        texto de color
+    </ui-text>
+    <ui-tooltip>
+        <ui-icon name="help"></ui-icon>
+        <ui-text slot="tooltip" color="white" size="xs">
+          Acá verás lo relacionado a la ayuda.
+        </ui-text>
+    </ui-tooltip>
+    <ui-icon name="cheveron-right"></ui-icon>
+    <ui-icon name="cheveron-down"></ui-icon>
+    <ui-icon name="heroicon-ui"></ui-icon>
+    <div>
         <button>
             Tipo de documento
         </button>
@@ -30,6 +43,6 @@
         <button>
             BUSCAR
         </button>
-    </div> -->
+    </div>
 
 </body>

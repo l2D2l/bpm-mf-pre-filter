@@ -1,30 +1,29 @@
 .aside {
   position: fixed;
-  width: 240px;
-  height: 100%;
-  top: 0px;
   z-index: 20;
-  background: #fff;
-  color: white;
+  top: 0px;
+  width: 240px;
+  @apply text-white;
+  @apply h-full;
 
   &__list {
-    background: #999999;
-    height: 100%;
-
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    background: #999999;
+    // height: 100%;
+    @apply h-full;
   }
 
   &__title {
-    height: 12.7%;
 
     display: flex;
+    height: 12.7%;
     align-items: center;
-    font-size: 25px;
-    margin-bottom: 0px;
     padding-left: 40px;
-    font-weight: 500;
+    margin-bottom: 0px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
     line-height: 1.5;
     &:focus {
       outline: 0;
@@ -32,41 +31,41 @@
   }
 
   &__profile {
+
+    display: flex;
     height: 14.65%;
+    align-items: center;
+    padding-left: 40px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
 
     &__avatar {
-      height: 50px;
       width: 50px;
+      height: 50px;
       border-radius: 50%;
     }
 
     &__name {
       padding-left: 12px;
     }
-
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin-bottom: 0px;
-    padding-left: 40px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
     &:focus {
       outline: 0;
     }
   }
 
   &__list-item {
-    height: 8.6%;
 
     display: flex;
+    height: 8.6%;
     align-items: center;
-    font-size: 18px;
-    margin-bottom: 0px;
     padding-left: 40px;
-    font-weight: 500;
+    margin-bottom: 0px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.5;
     &:focus {
       outline: 0;

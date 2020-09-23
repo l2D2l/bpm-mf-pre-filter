@@ -3,6 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { EmptyComponent } from './empty.component';
 import { PagesRoutingModule } from './pages/pages.routes';
 
+// const modules = [
+//   LoginModule,
+//   SingUpModule
+// ];
+
 const routes: Routes = [
   {
     path: '',
