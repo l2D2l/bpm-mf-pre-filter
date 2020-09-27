@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "vdst",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "ngx-build-plus:browser",

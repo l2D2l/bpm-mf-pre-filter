@@ -1,7 +1,8 @@
 .aside {
-  position: fixed;
-  z-index: 20;
-  top: 0px;
+  // position: fixed;
+  // z-index: 20;
+  // top: 0px;
+
   width: 240px;
   @apply text-white;
   @apply h-full;
@@ -14,8 +15,12 @@
     @apply h-full;
   }
 
+  &__first-list {
+    // padding: 0px;
+    // margin: 0px;
+    // background: #999999;
+  }
   &__title {
-
     display: flex;
     height: 12.7%;
     align-items: center;
@@ -31,7 +36,6 @@
   }
 
   &__profile {
-
     display: flex;
     height: 14.65%;
     align-items: center;
@@ -41,6 +45,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
+    // background: #C4C4C4;
 
     &__avatar {
       width: 50px;
@@ -57,7 +62,6 @@
   }
 
   &__list-item {
-
     display: flex;
     height: 8.6%;
     align-items: center;
@@ -71,8 +75,32 @@
       outline: 0;
     }
   }
+  @media (max-width: 768px) {
+    &__list-item {
+      height: 15%;
+    }
+    &__list-item--decoration {
+      text-decoration: underline;
+      margin-top: 70px !important;
+    }
+  }
 
   &__list-item--decoration {
     text-decoration: underline;
+    margin-top: 90px;
+  }
+  &__list-item--selected {
+    background: #c4c4c4;
+  }
+}
+@media (max-width: 768px) {
+  .aside-decoration {
+    @apply w-full;
+  }
+  .aside__title-decoration {
+    display: none;
+  }
+  .aside__profile-decoration {
+    display: none;
   }
 }

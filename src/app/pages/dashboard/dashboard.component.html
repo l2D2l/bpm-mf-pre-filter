@@ -1,10 +1,9 @@
 <body>
 
-    <h1>
-        Bienvenido, Pepito
+    <h1 class="dashboard__title">
+        Bienvenido, Jeancarlos
     </h1>
-
-    <p>
+    <p class="content">
     <!-- <p class="bg-blue-500"> -->
         Ingresa los datos del cliente para realizar una consulta
     </p>
@@ -15,7 +14,7 @@
         </button>
     </div> -->
     <!-- <ui-text> -->
-    <ui-text color="blue-900">
+    <!-- <ui-text color="blue-900">
         texto de color
     </ui-text>
     <ui-tooltip>
@@ -26,7 +25,7 @@
     </ui-tooltip>
     <ui-icon name="cheveron-right"></ui-icon>
     <ui-icon name="cheveron-down"></ui-icon>
-    <ui-icon name="heroicon-ui"></ui-icon>
+    <ui-icon name="heroicon-ui"></ui-icon> -->
     <div>
         <button>
             Tipo de documento
@@ -34,15 +33,144 @@
     </div>
 
     <div>
-        <button>
+        <button class="decoration">
             Ingresa nro de documento
         </button>
     </div>
 
-    <div>
-        <button>
+    <div >
+        <button class="search">
             BUSCAR
         </button>
     </div>
 
+    <!-- 
+    </di<label}></label>v><:  ng-<div>
+        <ui-text *ngIf="dataAccount">{{dataAccount}}</ui-text>
+        template *ngIf="dataAccount">
+    </ng-template> -->
+    <div>Account</div>
+
+    <div>
+        <label>code:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.code}}</ui-text>
+    </div>
+    <div>
+        <label>name:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.name}}</ui-text>
+    </div>
+    <div>
+        <label>firstName:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.firstName}}</ui-text>
+    </div>
+    <div>
+        <label>lastName:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.lastName}}</ui-text>
+    </div>
+    <div>
+        <label>email:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.email}}</ui-text>
+    </div>
+    <div>
+        <label>userImagePath:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.userImagePath}}</ui-text>
+    </div>
+    <div>
+        <label>phoneNumber:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.phoneNumber}}</ui-text>
+    </div>
+    <div>
+        <label>storeCode:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.storeCode}}</ui-text>
+    </div>
+    <div>
+        <label>storeDescription:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.storeDescription}}</ui-text>
+    </div>
+    <div>
+        <label>role:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.role}}</ui-text>
+    </div>
+    <div>
+        <label>channelCode:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.channelCode}}</ui-text>
+    </div>
+    <div>
+        <label>channelDescription:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.channelDescription}}</ui-text>
+    </div>
+    <div>
+        <label>agencyCode:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.agencyCode}}</ui-text>
+    </div>
+    <div>
+        <label>agencyDescription:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.agencyDescription}}</ui-text>
+    </div>
+    <div>
+        <label>leaderName:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.leaderName}}</ui-text>
+    </div>
+    <div>
+        <label>leaderRole:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.leaderRole}}</ui-text>
+    </div>
+    <div>
+        <label>supervisorName:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.supervisorName}}</ui-text>
+    </div>
+    <div>
+        <label>supervisorRole:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.supervisorRole}}</ui-text>
+    </div>
+    <div>
+        <label>businessUnitCode:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.businessUnitCode}}</ui-text>
+    </div>
+    <div>
+        <label>businessUnitDescription:  </label>
+        <ui-text *ngIf="dataAccount">{{dataAccount.businessUnitDescription}}</ui-text>
+    </div>
+
+    <div style="margin-top: 20px;">Task</div>
+    <div>
+        <label>name:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.name}}</ui-text>
+    </div>
+    <div>
+        <label>firstName:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.firstName}}</ui-text>
+    </div>
+    <div>
+        <label>lastName:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.lastName}}</ui-text>
+    </div>
+    <div>
+        <label>gender:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.gender}}</ui-text>
+    </div>
+    <div>
+        <label>maritalStatus:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.maritalStatus}}</ui-text>
+    </div>
+    <div>
+        <label>address:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.address}}</ui-text>
+    </div>
+    <div>
+        <label>streetName:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.streetName}}</ui-text>
+    </div>
+    <div>
+        <label>streetNumber:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.streetNumber}}</ui-text>
+    </div>
+    <div>
+        <label>documentNumber:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.documentNumber}}</ui-text>
+    </div>
+    <div>
+        <label>documentType:  </label>
+        <ui-text *ngIf="dataTask">{{dataTask.documentType}}</ui-text>
+    </div>
 </body>

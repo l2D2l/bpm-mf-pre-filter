@@ -1,0 +1,37 @@
+header {
+  // @apply px-4 py-3 bg-white;
+  display: flex;
+  justify-content: space-between;
+  @apply w-full;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  height: 8%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5;
+  @apply text-white;
+  background: #999999;
+}
+ion-icon {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  header {
+    height: 14%;
+  }
+}
+.header__img {
+  @apply h-10 flex flex-row justify-start items-start content-start flex-no-wrap;
+}
+
+img {
+  @apply h-full w-auto;
+}
+.header__title {
+}

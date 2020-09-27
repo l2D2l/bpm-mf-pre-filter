@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'vdst-account',
+  selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.scss'],
 })

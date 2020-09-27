@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, DoBootstrap, Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +8,7 @@ import { EmptyComponent } from './empty.component';
 import { PagesModule } from './pages/pages.module';
 @NgModule({
   declarations: [AppComponent, EmptyComponent],
-  imports: [BrowserModule, AppRoutingModule, PagesModule],
+  imports: [BrowserModule, AppRoutingModule, PagesModule, HttpClientModule],
   providers: [],
   bootstrap: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
