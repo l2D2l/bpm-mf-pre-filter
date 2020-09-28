@@ -9,11 +9,17 @@ import { Task } from './interface/task';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  botones: string[];
+  buttons: string[];
   dataTask?: Task;
   dataAccount?: Account;
+  showSidebar = true;
   constructor(private dashService: DashboardService) {
-    this.botones = ['Tipo de documento', 'Ingresa nro de documento', 'BUSCAR'];
+    this.buttons = ['Tipo de documento', 'Ingresa nro de documento', 'BUSCAR'];
+  }
+
+  onEventSidebar(event: boolean) {
+    this.showSidebar = event;
+    console.log('eventooo', this.showSidebar);
   }
 
   ngOnInit(): void {

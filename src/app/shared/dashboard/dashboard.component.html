@@ -1,18 +1,26 @@
+<!-- <body>
+
+    <h1 class="dashboard__title">
+        Bienvenido, Jeancarlos
+    </h1>
+    <p class="content">
+        Ingresa los datos del cliente para realizar una consulta
+    </p>
+    <div *nfFor="let button of buttons">
+        <button>
+            {{button}}
+        </button>
+    </div>
+</body> -->
+
 <app-header (eventShowSidebar)="onEventSidebar($event)" class="header"></app-header>
 <body [class.show-sideBar]="showSidebar" class="wrapper">
 
-    <!-- <div id="main-wrapper" class="wrapper"> -->
-    
         <app-sidebar  [showSidebar]="showSidebar" class="sidebar"></app-sidebar>
         <div class="page-wrapper">
-    
-            <!-- <div class="container-fluid"> -->
-    
+
                 <router-outlet></router-outlet>
     
-            <!-- </div> -->
         </div>
-    
-    <!-- </div> -->
 
 </body>
